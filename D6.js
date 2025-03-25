@@ -24,11 +24,13 @@ addClassToTitle();
 const changePcontent = function () {
   const changeP = document.querySelectorAll("div p");
   //console.log(changeP);
-  for (let i = 0; i < changeP.length; i++) {
-    console.log(changeP[i]);
-    changeP.innerHTML = "cambiamo il testo dei p figli di un div";
-  }
+  //for (let i = 0; i < changeP.length; i++) {
+  //console.log(changeP[i]);
+  changeP.forEach((p) => {
+    p.innerText = "cambiamo il testo dei p figli di un div";
+  });
 };
+
 changePcontent();
 
 /* ESERCIZIO 4
